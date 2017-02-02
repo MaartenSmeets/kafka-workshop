@@ -1,0 +1,29 @@
+{
+  "name": "kafka-node-client-sample",
+  "version": "0.0.2",
+  "description": "Simple Node.js programs to produce to Kafka and consume from Kafka",
+  "main": "KafkaConsumer.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MaartenSmeets/kafka-workshop.git"
+  },
+  "keywords": [
+    "kafka",
+    "node",
+    "js",
+    "produce",
+    "consume"
+  ],
+  "author": "Lucas Jellema",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MaartenSmeets/kafka-workshop/issues"
+  },
+  "homepage": "https://github.com/MaartenSmeets/kafka-workshop#readme",
+  "dependencies": {
+    "kafka-node": "^1.3.4"
+  }
+}
