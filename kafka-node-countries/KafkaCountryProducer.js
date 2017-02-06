@@ -73,9 +73,10 @@ function handleCountry( currentCountry) {
 
 
 function produceCountryMessage(country) {
-
+    KeyedMessage = kafka.KeyedMessage,
+    countryKM = new KeyedMessage(country.code, JSON.stringify(country)),
     payloads = [
-        { topic: countriesTopic, messages: JSON.stringify(country), partition: 0 },
+        { topic: countriesTopic, messages: countryKM, partition: 0 },
     ];
     if (countryProducerReady) {
     producer.send(payloads, function (err, data) {

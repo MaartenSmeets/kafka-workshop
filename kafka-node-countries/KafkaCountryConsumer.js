@@ -80,6 +80,7 @@ function handleCountryMessage(countryMessage) {
     // retain top 3 (element zero is included, element 3 is not)
     top3Populations = top3Populations.slice(0,3);
     var newTop3=JSON.stringify(top3Populations);
+    // oldTop3 contains the JSON stringification of the previous state of the top 3; if it differs from the current, the top3 was updated
     if (newTop3 != oldTop3) {
       console.log("New Top 3 populations: "+ newTop3);
       oldTop3 = newTop3;
